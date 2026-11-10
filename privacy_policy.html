@@ -1,187 +1,114 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سیاست حفظ حریم خصوصی - زبان فلای</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Vazir', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        h1, h2 {
-            color: #3b82f6;
-        }
-        .section {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-        }
-        .lang-toggle {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            z-index: 1000;
-        }
-        @font-face {
-            font-family: 'Vazir';
-            src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2') format('woff2');
-        }
-        .english {
-            font-family: 'Roboto', sans-serif;
-            direction: ltr;
-            text-align: left;
-        }
-        .english ul {
-            padding-left: 1.5rem;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for our apps and games — data practices, children’s privacy, service providers and account deletion.">
+<title>سیاست حفظ حریم خصوصی | App Privacy Policy</title>
+<style>
+:root { color-scheme: light; --ink:#172b3a; --muted:#526675; --accent:#067869; --line:#dce5e8; --paper:#fff; --wash:#f3f6f7; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:88px; }
+body { margin:0; background:var(--wash); color:var(--ink); font-family:Tahoma,Arial,sans-serif; font-size:16px; line-height:1.95; }
+a { color:#006d74; overflow-wrap:anywhere; text-underline-offset:4px; }
+a:hover { color:#00424b; }
+a:focus-visible,button:focus-visible { outline:3px solid #d18d22; outline-offset:4px; }
+[hidden] { display:none !important; }
+.topbar { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); }
+.topbar-inner { max-width:1000px; margin:auto; padding:12px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.brand { font-size:14px; font-weight:bold; color:var(--accent); }
+.languages { display:flex; gap:6px; }
+.languages button { min-height:40px; min-width:74px; padding:6px 14px; border:1px solid var(--line); border-radius:8px; background:white; color:var(--ink); font:inherit; font-size:14px; cursor:pointer; }
+.languages button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:white; }
+main { width:min(100% - 32px,952px); margin:28px auto 60px; }
+.hero { background:#153c48; border-radius:18px; padding:36px 38px; color:white; margin-bottom:20px; }
+.eyebrow { color:#a5e1d5; letter-spacing:.02em; font-size:14px; margin:0 0 8px; }
+h1 { font-size:clamp(26px,4vw,38px); line-height:1.5; margin:0 0 12px; }
+.hero p { color:#e3edf0; margin:8px 0; }
+.hero .publisher { color:white; }
+.meta { font-size:14px; }
+.summary { background:#eaf5f2; border:1px solid #cde4dc; padding:18px 22px; border-radius:12px; margin-bottom:20px; }
+.summary p { margin:0 0 6px; }
+.quicklinks { display:flex; flex-wrap:wrap; gap:8px 20px; font-size:14px; }
+.review { border:1px solid #e7cc8e; background:#fff8e8; border-radius:12px; padding:16px 22px; margin-bottom:20px; font-size:14px; }
+.review strong { color:#78551c; }
+.card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:26px 30px; margin-bottom:16px; }
+h2 { font-size:21px; line-height:1.7; margin:0 0 16px; color:#115957; }
+p { margin:0 0 14px; }
+p:last-child { margin-bottom:0; }
+ul { margin:0 0 14px; padding-inline-start:24px; }
+li { padding-inline-start:3px; margin:7px 0; }
+.table-wrap { overflow:auto; margin:4px 0 18px; border:1px solid var(--line); border-radius:10px; }
+table { width:100%; border-collapse:collapse; font-size:15px; }
+th,td { text-align:start; padding:13px 16px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { background:#edf4f4; font-weight:bold; }
+tr:last-child td { border-bottom:0; }
+td:first-child { width:25%; font-weight:bold; }
+footer { text-align:center; color:var(--muted); font-size:13px; padding:10px 16px 28px; }
+[lang="en"] { font-family:Arial,sans-serif; line-height:1.8; }
+@media(max-width:600px) { body { font-size:15px; } main { width:calc(100% - 24px); margin-top:16px; } .topbar-inner { padding:10px 12px; } .brand { font-size:12px; } .hero { padding:25px 22px; border-radius:14px; } .card { padding:20px 18px; } h2 { font-size:19px; } th,td { padding:10px; font-size:14px; } td:first-child { width:29%; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print { body { background:white; color:black; } .topbar,.review,.quicklinks { display:none; } [hidden] { display:block !important; } main { width:100%; margin:0; } .hero { background:white; color:black; padding:0 0 16px; } .hero p,.hero .publisher,.eyebrow { color:black; } .card { border:0; padding:12px 0; border-bottom:1px solid #ccc; border-radius:0; } h2 { break-after:avoid; } }
+</style>
 </head>
 <body>
-    <button id="langToggle" class="lang-toggle bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Switch to English</button>
-    <div class="container">
-        <h1 class="text-3xl font-bold mb-6 text-center fa">سیاست حفظ حریم خصوصی - زبان فلای</h1>
-        <h1 class="text-3xl font-bold mb-6 text-center en hidden">Privacy Policy - Zaban Fly</h1>
-        <p class="text-center mb-8 fa">آخرین به‌روزرسانی: ۳۰ آوریل ۲۰۲۵</p>
-        <p class="text-center mb-8 en hidden">Last Updated: April 30, 2025</p>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">مقدمه</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Introduction</h2>
-            <p class="fa">ما در «زبان فلای» به حریم خصوصی شما اهمیت زیادی می‌دهیم. این سیاست حفظ حریم خصوصی توضیح می‌دهد که چگونه اطلاعات شما را جمع‌آوری، استفاده، ذخیره و محافظت می‌کنیم. با استفاده از اپلیکیشن «زبان فلای»، شما با شرایط این سیاست موافقت می‌کنید.</p>
-            <p class="en hidden">At Zaban Fly, we value your privacy. This Privacy Policy explains how we collect, use, store, and protect your information. By using the Zaban Fly app, you agree to the terms of this policy.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">اطلاعاتی که جمع‌آوری می‌کنیم</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Information We Collect</h2>
-            <ul class="list-disc pr-6 fa">
-                <li><strong>اطلاعات شخصی:</strong> ما هیچ اطلاعات شخصی مانند نام، ایمیل یا شماره تلفن را بدون رضایت صریح شما جمع‌آوری نمی‌کنیم. اگر از طریق ایمیل پشتیبانی (Naturrre.app@gmail.com) با ما تماس بگیرید، ممکن است اطلاعات تماس شما را برای پاسخگویی ذخیره کنیم.</li>
-                <li><strong>داده‌های استفاده:</strong> اطلاعاتی مانند پیشرفت یادگیری، هدف‌های روزانه، کلمات یادگرفته‌شده و گزارش‌های مبتنی بر جعبه لایتنر به‌صورت محلی روی دستگاه شما ذخیره می‌شوند و فقط برای بهبود تجربه کاربری استفاده می‌شوند.</li>
-                <li><strong>داده‌های دستیار هوشمند:</strong> تصاویر، ویدئوها یا ورودی‌های صوتی که به دستیار هوشمند ارائه می‌دهید، فقط برای ارائه پاسخ‌های دقیق (مانند ترجمه یا تحلیل) پردازش می‌شوند و ذخیره نمی‌شوند.</li>
-                <li><strong>داده‌های ناشناس:</strong> ممکن است داده‌های ناشناسی مانند تعداد کاربران فعال یا نحوه استفاده از اپلیکیشن را برای بهبود عملکرد اپ جمع‌آوری کنیم.</li>
-            </ul>
-            <ul class="list-disc pl-6 en hidden">
-                <li><strong>Personal Information:</strong> We do not collect personal information such as name, email, or phone number without your explicit consent. If you contact us via our support email (Naturrre.app@gmail.com), we may store your contact information to respond.</li>
-                <li><strong>Usage Data:</strong> Information such as learning progress, daily goals, learned words, and Leitner-based reports are stored locally on your device and used solely to enhance your user experience.</li>
-                <li><strong>Smart Assistant Data:</strong> Images, videos, or audio inputs provided to the smart assistant are processed only to deliver accurate responses (e.g., translations or analysis) and are not stored.</li>
-                <li><strong>Anonymous Data:</strong> We may collect anonymous data, such as the number of active users or app usage patterns, to improve app performance.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">نحوه استفاده از اطلاعات</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">How We Use Information</h2>
-            <p class="fa">ما از اطلاعات شما برای موارد زیر استفاده می‌کنیم:</p>
-            <p class="en hidden">We use your information for the following purposes:</p>
-            <ul class="list-disc pr-6 fa">
-                <li>ارائه خدمات اپلیکیشن، مانند فلش‌کارت‌های هوشمند، گزارش‌های پیشرفت و آموزش‌های گرامر.</li>
-                <li>شخصی‌سازی تجربه یادگیری، مانند تنظیم هدف‌های روزانه و زنجیره یادگیری.</li>
-                <li>پاسخ به سؤالات و پشتیبانی از طریق ایمیل.</li>
-                <li>بهبود عملکرد اپلیکیشن و افزودن ویژگی‌های جدید مانند بخش آزمون‌های جامع.</li>
-            </ul>
-            <ul class="list-disc pl-6 en hidden">
-                <li>Providing app services, such as smart flashcards, progress reports, and grammar lessons.</li>
-                <li>Personalizing your learning experience, such as setting daily goals and maintaining learning streaks.</li>
-                <li>Responding to inquiries and providing support via email.</li>
-                <li>Improving app performance and adding new features, such as comprehensive test sections.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">اشتراک‌گذاری اطلاعات</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Sharing Information</h2>
-            <p class="fa">ما اطلاعات شخصی شما را با هیچ شخص ثالثی به اشتراک نمی‌گذاریم، مگر در موارد زیر:</p>
-            <p class="en hidden">We do not share your personal information with third parties, except in the following cases:</p>
-            <ul class="list-disc pr-6 fa">
-                <li>با رضایت صریح شما.</li>
-                <li>برای رعایت الزامات قانونی یا حفاظت از حقوق ما.</li>
-            </ul>
-            <ul class="list-disc pl-6 en hidden">
-                <li>With your explicit consent.</li>
-                <li>To comply with legal requirements or protect our rights.</li>
-            </ul>
-            <p class="fa">داده‌های ناشناس ممکن است برای تحلیل‌های آماری با ارائه‌دهندگان خدمات شخص ثالث به اشتراک گذاشته شوند، اما این داده‌ها هیچ‌گونه اطلاعات شناسایی شخصی ندارند.</p>
-            <p class="en hidden">Anonymous data may be shared with third-party service providers for statistical analysis, but this data contains no personally identifiable information.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">امنیت داده‌ها</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Data Security</h2>
-            <p class="fa">ما از اقدامات امنیتی استاندارد برای محافظت از داده‌های شما استفاده می‌کنیم. با این حال، هیچ روش انتقال یا ذخیره‌سازی داده‌ای کاملاً امن نیست. شما با استفاده از اپلیکیشن، این خطرات را می‌پذیرید.</p>
-            <p class="en hidden">We use standard security measures to protect your data. However, no method of data transmission or storage is completely secure. By using the app, you accept these risks.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">حقوق شما</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Your Rights</h2>
-            <p class="fa">شما حق دارید:</p>
-            <p class="en hidden">You have the right to:</p>
-            <ul class="list-disc pr-6 fa">
-                <li>درخواست دسترسی به داده‌های ذخیره‌شده خود را داشته باشید.</li>
-                <li>درخواست حذف داده‌های خود را از طریق تماس با ما (Naturrre.app@gmail.com) بدهید.</li>
-                <li>از ما بخواهید که پردازش داده‌های شما را محدود کنیم.</li>
-            </ul>
-            <ul class="list-disc pl-6 en hidden">
-                <li>Request access to your stored data.</li>
-                <li>Request deletion of your data by contacting us (Naturrre.app@gmail.com).</li>
-                <li>Request that we restrict the processing of your data.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">تغییرات در سیاست حفظ حریم خصوصی</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Changes to the Privacy Policy</h2>
-            <p class="fa">ما ممکن است این سیاست را به‌روزرسانی کنیم. تغییرات از طریق اپلیکیشن یا ایمیل به شما اطلاع‌رسانی می‌شوند. ادامه استفاده از اپلیکیشن پس از به‌روزرسانی به منزله پذیرش تغییرات است.</p>
-            <p class="en hidden">We may update this policy. Changes will be communicated through the app or via email. Continued use of the app after updates constitutes acceptance of the changes.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="text-xl font-semibold mb-4 fa">تماس با ما</h2>
-            <h2 class="text-xl font-semibold mb-4 en hidden">Contact Us</h2>
-            <p class="fa">اگر سؤالی درباره این سیاست یا نحوه مدیریت داده‌هایتان دارید، با ما از طریق ایمیل <a href="mailto:Naturrre.app@gmail.com" class="text-blue-600 hover:underline">Naturrre.app@gmail.com</a> تماس بگیرید.</p>
-            <p class="en hidden">If you have questions about this policy or how your data is handled, contact us at <a href="mailto:Naturrre.app@gmail.com" class="text-blue-600 hover:underline">Naturrre.app@gmail.com</a>.</p>
-        </div>
-
-        <footer class="text-center mt-8">
-            <p class="fa">© ۲۰۲۵ زبان فلای. تمامی حقوق محفوظ است.</p>
-            <p class="en hidden">© 2025 Zaban Fly. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script>
-        const langToggle = document.getElementById('langToggle');
-        const faElements = document.querySelectorAll('.fa');
-        const enElements = document.querySelectorAll('.en');
-        const html = document.documentElement;
-
-        langToggle.addEventListener('click', () => {
-            if (html.lang === 'fa') {
-                html.lang = 'en';
-                html.dir = 'ltr';
-                document.body.classList.add('english');
-                faElements.forEach(el => el.classList.add('hidden'));
-                enElements.forEach(el => el.classList.remove('hidden'));
-                langToggle.textContent = 'Switch to Persian';
-            } else {
-                html.lang = 'fa';
-                html.dir = 'rtl';
-                document.body.classList.remove('english');
-                faElements.forEach(el => el.classList.remove('hidden'));
-                enElements.forEach(el => el.classList.add('hidden'));
-                langToggle.textContent = 'Switch to English';
-            }
-        });
-    </script>
+<header class="topbar"><div class="topbar-inner"><span class="brand" id="brand">حریم خصوصی برنامه ها</span><nav class="languages" aria-label="Language / زبان"><button type="button" data-language="fa" aria-pressed="true">فارسی</button><button type="button" data-language="en" aria-pressed="false">English</button></nav></div></header>
+<main>
+<article id="policy-fa" lang="fa" dir="rtl">
+<header class="hero"><p class="eyebrow">برنامه ها و بازی های ما</p><h1>سیاست حفظ حریم خصوصی</h1><p class="publisher">[نام ناشر مطابق صفحه مارکت]</p><p class="meta"><time datetime="2026-11-11">آخرین بازبینی: ۱۱ نوامبر ۲۰۲۶</time></p></header>
+<aside class="review"><strong>یادداشت آماده سازی برای ناشر:</strong> پیش از انتشار، نام ناشر را جایگزین کنید؛ فهرست سرویس ها، نگهداری داده و تعهدات بخش کودکان را با نسخه واقعی برنامه ها تطبیق دهید و این یادداشت را حذف کنید.</aside>
+<div class="summary"><p>در این صفحه می توانید درباره داده های مرتبط با امکانات مختلف برنامه ها، مجوزها، خدمات دیگر و روش درخواست حذف اطلاعات بخوانید.</p><nav class="quicklinks" aria-label="دسترسی سریع"><a href="#data-fa">داده ها</a><a href="#providers-fa">ارائه دهندگان</a><a href="#children-fa">کودکان</a><a href="#delete-data-fa">حذف حساب و داده</a></nav></div>
+<section class="card" id="scope-fa"><h2>۱. دامنه این سیاست و مسئول داده</h2><p>این سیاست برای برنامه ها و بازی های منتشر شده توسط <strong class="publisher">[نام ناشر مطابق صفحه مارکت]</strong> که به این صفحه ارجاع می دهند اعمال می شود. نوع داده و خدمات فعال به برنامه، نسخه، مارکت، امکانات مورد استفاده و مجوزهای دستگاه بستگی دارد. هر قابلیت توضیح داده شده در این سند لزوما در همه برنامه ها وجود ندارد.</p><p>این سند همراه با توضیحات اختصاصی همان برنامه و اطلاعیه های داخل آن خوانده می شود. در صورت وجود توضیح اختصاصی درباره یک قابلیت، آن توضیح جزئیات همان پردازش را تکمیل می کند. برای پرسش های مربوط به حریم خصوصی با <a href="mailto:Naturrre.app@gmail.com">Naturrre.app@gmail.com</a> تماس بگیرید.</p></section>
+<section class="card" id="data-fa"><h2>۲. داده هایی که ممکن است پردازش شوند</h2><div class="table-wrap"><table><thead><tr><th scope="col">دسته داده</th><th scope="col">نمونه و کاربرد</th></tr></thead><tbody><tr><td>حساب و پروفایل</td><td>در صورت ورود یا ثبت نام: شماره تلفن، ایمیل، شناسه حساب، نام نمایشی، تصویر پروفایل و اطلاعاتی که خودتان مانند کشور یا شهر وارد می کنید؛ برای ورود، مدیریت حساب و امکانات اجتماعی مربوط.</td></tr><tr><td>فعالیت و محتوای برنامه</td><td>تنظیمات، پیشرفت آموزشی، امتیاز بازی، سوابق فعالیت و فایل های پشتیبان؛ بسته به قابلیت، روی دستگاه یا برای همگام سازی و بازیابی روی سرور.</td></tr><tr><td>داده فنی و استفاده</td><td>نشانی IP، مدل دستگاه، سیستم عامل، زبان، نسخه و منبع نصب برنامه، شناسه نصب یا دستگاه در صورت استفاده، رویدادهای استفاده و گزارش خطا؛ برای امنیت، تحلیل عملکرد و رفع اشکال.</td></tr><tr><td>اعلان و تبلیغات</td><td>توکن یا شناسه ثبت اعلان، تعامل با اعلان، داده نمایش و تعامل با تبلیغ، شناسه تبلیغاتی در صورت مجاز بودن و موقعیت تقریبی استنباط شده از IP؛ متناسب با قابلیت و تنظیمات مربوط.</td></tr><tr><td>خرید و اشتراک</td><td>نام محصول، وضعیت و تاریخ خرید، رسید یا توکن تراکنش و اطلاعات لازم برای تایید یا بازیابی خرید. اطلاعات کارت بانکی توسط فروشگاه یا درگاه پرداخت پردازش می شود.</td></tr><tr><td>فایل، تصویر، صدا و ورودی ها</td><td>محتوایی که انتخاب، ضبط یا ارسال می کنید؛ برای عکس پروفایل، تلفظ، ترجمه، دستیار هوشمند، ذخیره یا انتقال فایل. دسترسی و ارسال بر اساس قابلیت مورد استفاده است.</td></tr><tr><td>گفت و گو و پشتیبانی</td><td>پیام ها، پاسخ ها، پیوست ها و اطلاعات تماس؛ برای پاسخگویی، تاریخچه، پشتیبانی و در صورت نیاز بررسی ایمنی و سوءاستفاده. این اطلاعات ممکن است روی سرور ذخیره شود.</td></tr><tr><td>اتصال بین دستگاه ها</td><td>در قابلیت های انتقال فایل یا بازی نزدیک: نام یا شناسه اتصال دستگاه، اطلاعات نشست و اتصال Wi-Fi یا Bluetooth و فایل های انتخابی؛ برای پیدا کردن و ارتباط با دستگاه مقصد.</td></tr></tbody></table></div><p>داده قابلیت های کاملا محلی روی دستگاه پردازش می شود. فعال بودن قابلیت های آنلاین، تبلیغات یا خدمات تحلیلی می تواند باعث ارسال داده مربوط به سرور ما یا ارائه دهنده همان خدمت شود.</p></section>
+<section class="card" id="purposes-fa"><h2>۳. هدف استفاده از داده</h2><ul><li>ارائه محتوای آموزشی و سرگرمی، اجرای قابلیت انتخابی و نگهداری تنظیمات یا پیشرفت.</li><li>ورود، مدیریت حساب، پشتیبان گیری، همگام سازی و بازیابی خرید یا اشتراک.</li><li>ارائه قابلیت های ارتباطی، رتبه بندی، انتقال فایل یا دستیار هوشمند در برنامه های دارای آن امکانات.</li><li>ارسال اعلان، نمایش تبلیغ در نسخه های دارای تبلیغات، تحلیل عملکرد، رفع خطا و پاسخ به درخواست پشتیبانی.</li><li>امنیت، جلوگیری از سوءاستفاده و تقلب و انجام تکالیف قانونی مربوط.</li></ul><p>حسب قانون قابل اعمال و نوع پردازش، مبنای پردازش می تواند ارائه خدمت درخواستی، رضایت شما، الزامات قانونی یا منافع مشروع مربوط به امنیت و بهبود خدمت باشد. هرجا رضایت لازم باشد، باید جداگانه دریافت شود؛ این متن به تنهایی جای رضایت لازم را نمی گیرد.</p></section>
+<section class="card" id="permissions-fa"><h2>۴. مجوزهای دستگاه و انتخاب شما</h2><ul><li>اعلان: برای نمایش پیام ها و یادآوری ها؛ می توانید آن را از تنظیمات سیستم خاموش کنید.</li><li>میکروفن و دوربین: برای ضبط صدای انتخابی، تمرین تلفظ، عکس یا اسکن QR در قابلیت مربوط.</li><li>فایل و رسانه: برای انتخاب، نمایش، ذخیره یا انتقال فایل های مورد نیاز همان قابلیت.</li><li>Bluetooth، دستگاه های نزدیک و شبکه: برای اتصال و تبادل داده یا بازی نزدیک. در برخی نسخه های قدیمی سیستم عامل، کشف دستگاه ممکن است به مجوز موقعیت نیاز داشته باشد.</li></ul><p>می توانید مجوزها را در تنظیمات دستگاه بررسی یا لغو کنید. رد یک مجوز ممکن است قابلیت وابسته را محدود کند. دادن یک مجوز به تنهایی به معنی ارسال همه اطلاعات دستگاه به سرور نیست؛ ارسال داده به قابلیت و خدمت مورد استفاده بستگی دارد.</p></section>
+<section class="card" id="ads-fa"><h2>۵. تبلیغات، تحلیل و اعلان</h2><p>برخی نسخه ها از خدماتی مانند Google AdMob یا Yandex Mobile Ads برای تبلیغات و از Firebase Analytics، Crashlytics یا Cloud Messaging برای تحلیل استفاده، گزارش خطا و اعلان استفاده می کنند. سرویس فعال می تواند اطلاعات فنی، شناسه های مجاز و رویدادهای مربوط به خدمت را پردازش کند. تبلیغ غیر شخصی نیز ممکن است برای امنیت، تحویل و اندازه گیری تبلیغ به داده فنی نیاز داشته باشد.</p><p>در صورت ارائه انتخاب رضایت یا تنظیمات حریم خصوصی در برنامه، می توانید همان گزینه ها را مدیریت کنید. تنظیمات اعلان و شناسه تبلیغاتی دستگاه نیز از تنظیمات سیستم قابل کنترل است. پردازش برای مخاطب کودک مشمول بخش ویژه کودکان این سند است.</p></section>
+<section class="card" id="ai-fa"><h2>۶. هوش مصنوعی، ترجمه و پردازش آنلاین</h2><p>اگر از گفت و گو، ترجمه یا پردازش متن، تصویر یا صدا استفاده کنید، ورودی لازم و اطلاعات فنی درخواست ممکن است برای تولید پاسخ به سرور ما و سرویس پردازش مربوط فرستاده شود. در قابلیت های مرتبط ممکن است از OpenRouter و ارائه دهندگان مدل آن، خدمات Google یا Microsoft Azure استفاده شود. هر سرویس فقط در صورت فعال بودن در همان قابلیت مرتبط است.</p><p>پیام ها و پاسخ ها ممکن است برای تاریخچه، پشتیبانی، ایمنی و بررسی سوءاستفاده ذخیره شوند و در صورت نیاز توسط افراد مجاز بررسی شوند. مدت نگهداری و استفاده ارائه دهنده خارجی تابع سرویس و تنظیمات آن نیز هست؛ درباره حذف فوری همه ورودی ها یا عدم استفاده همه ارائه دهندگان برای آموزش مدل، تضمین کلی داده نمی شود. اطلاعات محرمانه یا غیرضروری را در ورودی ها قرار ندهید.</p></section>
+<section class="card" id="sharing-fa"><h2>۷. دریافت کنندگان داده و خدمات دیگر</h2><p>داده مورد نیاز ممکن است با ارائه دهندگان میزبانی، ورود، پردازش، تحلیل، تبلیغات، اعلان و پرداخت برای انجام همان خدمات به اشتراک گذاشته شود. در قابلیت های عمومی یا اجتماعی، اطلاعاتی مانند نام نمایشی، تصویر و امتیازی که برای نمایش انتخاب کرده اید ممکن است برای کاربران دیگر دیده شود. فایل انتخابی در قابلیت انتقال، به گیرنده انتخابی فرستاده می شود.</p><p>در صورت الزام قانونی، رسیدگی به تقلب یا حفاظت از ایمنی و حقوق اشخاص نیز ممکن است افشای محدود لازم باشد. هنگام باز کردن لینک، تبلیغ یا فروشگاه خارجی، شیوه پردازش آن مقصد نیز اعمال می شود. اطلاعات بیشتر درباره سرویس های احتمالی را در لینک های زیر ببینید.</p></section>
+<section class="card" id="providers-fa"><h2>اطلاعات حریم خصوصی ارائه دهندگان</h2><p>همه این سرویس ها در همه برنامه ها فعال نیستند. فهرست زیر سرویس هایی را توضیح می دهد که ممکن است در مجموعه برنامه ها استفاده شوند. خرید از مایکت یا هر فروشگاه دیگر نیز تابع اطلاعیه حریم خصوصی همان فروشگاه است.</p><div class="table-wrap"><table><thead><tr><th scope="col">ارائه دهنده</th><th scope="col">خدمت مرتبط</th></tr></thead><tbody><tr><td><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google / Google Play / AdMob</a></td><td>ورود، خدمات فروشگاه و پرداخت یا تبلیغات، در صورت استفاده</td></tr><tr><td><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase</a></td><td>تحلیل استفاده، گزارش خطا، اعلان یا خدمات حساب، در صورت استفاده</td></tr><tr><td><a href="https://yandex.com/legal/confidential/en/" rel="noopener noreferrer">Yandex Mobile Ads</a></td><td>تبلیغات در نسخه های دارای این سرویس</td></tr><tr><td><a href="https://openrouter.ai/privacy/" rel="noopener noreferrer">OpenRouter</a></td><td>درخواست های هوش مصنوعی و ارائه دهندگان مدل مرتبط، در صورت استفاده</td></tr><tr><td><a href="https://www.microsoft.com/en-us/privacy/privacystatement" rel="noopener noreferrer">Microsoft / Azure</a></td><td>ترجمه یا پردازش ابری در قابلیت های مربوط، در صورت استفاده</td></tr><tr><td><a href="https://cafebazaar.ir/privacy" rel="noopener noreferrer">Cafe Bazaar</a></td><td>توزیع برنامه و پرداخت یا اشتراک از طریق بازار، در صورت استفاده</td></tr></tbody></table></div></section>
+<section class="card" id="retention-fa"><h2>۸. مدت نگهداری و امنیت</h2><ul><li>داده محلی معمولا تا حذف آن از داخل برنامه، پاک کردن داده برنامه یا حذف نصب روی دستگاه باقی می ماند؛ نسخه پشتیبان سیستم عامل ممکن است جداگانه مدیریت شود.</li><li>داده حساب و پشتیبان سروری تا زمانی نگهداری می شود که برای قابلیت مربوط لازم باشد یا درخواست معتبر حذف رسیدگی شود؛ سوابق لازم برای امنیت، حسابداری یا تکلیف قانونی ممکن است به مدت لازم بیشتر باقی بماند.</li><li>پیام های پشتیبانی، سوابق پردازش و گزارش های فنی بر اساس نیاز پشتیبانی، ایمنی و تنظیمات سرویس مربوط نگهداری می شوند. پس از رفع نیاز، حذف یا بی نام سازی می شوند.</li><li>حذف از نسخه های پشتیبان سروری ممکن است مطابق چرخه نگهداری آن نسخه ها انجام شود. درباره داده مستثنا از حذف و علت نگهداری، در پاسخ به درخواست توضیح داده می شود.</li></ul><p>از تدابیر متناسب برای کنترل دسترسی و حفاظت از داده استفاده می شود، اما هیچ روش انتقال یا ذخیره سازی امنیت مطلق ندارد. ما و ارائه دهندگان خدمات ممکن است داده را در کشورهایی غیر از محل اقامت شما پردازش کنیم؛ در این موارد، الزامات حفاظت و انتقال داده قابل اعمال باید رعایت شود.</p></section>
+<section class="card" id="children-fa"><h2>۹. حریم خصوصی کودکان و نقش والدین</h2><p>برخی برنامه ها محتوای کودک دارند و برخی برای مخاطب عمومی هستند. مخاطب هر برنامه در صفحه فروشگاه همان برنامه مشخص می شود. در تجربه های مخصوص کودک، جمع آوری داده باید به نیازهای مجاز همان خدمت محدود شود و تبلیغات مبتنی بر علاقه یا بازاریابی مجدد بر پایه پروفایل کودک ارائه نمی شود.</p><p>امکاناتی مانند حساب، ارسال محتوا، گفت و گو یا پردازش آنلاین برای کودک، هرجا قانون لازم بداند، نیازمند اطلاع رسانی و رضایت قابل تایید والد یا سرپرست پیش از جمع آوری داده است. صرف نصب برنامه یا دادن مجوز دستگاه جای این رضایت را نمی گیرد. والد یا سرپرست می تواند برای آگاهی از داده مرتبط با کودک، درخواست حذف یا توقف پردازش با ما تماس بگیرد. اگر متوجه پردازش داده کودک بدون رضایت لازم شویم، موضوع را بررسی و برای حذف داده یا محدود کردن پردازش اقدام می کنیم.</p></section>
+<section class="card" id="rights-fa"><h2>۱۰. انتخاب ها و حقوق شما</h2><p>با توجه به محل اقامت و قانون قابل اعمال، ممکن است حق دسترسی، اصلاح، دریافت نسخه ای از داده، حذف، اعتراض یا محدود کردن پردازش، پس گرفتن رضایت و مراجعه به مرجع نظارتی داشته باشید. درخواست خود را با ذکر نام برنامه از طریق ایمیل مطرح کنید. برای حفاظت از حساب، ممکن است اطلاعات متناسبی برای تایید هویت یا سرپرستی درخواست شود؛ رمز عبور یا کد ورود را ارسال نکنید.</p><p>لغو مجوز یا رضایت می تواند قابلیت وابسته را محدود کند. خاموش کردن اعلان از تنظیمات گوشی ممکن است و حذف برنامه به تنهایی لزوما حساب یا داده سروری را حذف نمی کند. مدیریت یا لغو اشتراک پرداختی نیز باید از فروشگاه مربوط انجام شود.</p></section>
+<section class="card" id="delete-data-fa"><h2>۱۱. درخواست حذف حساب و داده</h2><p>برای درخواست حذف، به <a href="mailto:Naturrre.app@gmail.com?subject=Account%20and%20Data%20Deletion">Naturrre.app@gmail.com</a> با موضوع <span dir="ltr">Account and Data Deletion</span> ایمیل بزنید و این موارد را بنویسید:</p><ul><li>نام برنامه و در صورت امکان شناسه پکیج آن.</li><li>شماره تلفن، ایمیل یا شناسه ای که برای حساب همان برنامه استفاده کرده اید، در صورت وجود حساب.</li><li>اینکه حذف کامل حساب و داده مرتبط را می خواهید یا حذف یک نوع داده مانند گفت و گو یا پشتیبان.</li></ul><p>هر گزینه حذف موجود در داخل برنامه نیز می تواند برای شروع درخواست استفاده شود. پس از تایید درخواست، حساب و داده مرتبط در کنترل ما حذف یا به صورت غیرقابل شناسایی تبدیل می شود، جز سوابقی که نگهداری محدود آنها برای علت قانونی، امنیت یا جلوگیری از تقلب لازم است. پاسخ و رسیدگی مطابق مهلت های قانون قابل اعمال انجام می شود و استثناهای نگهداری توضیح داده می شود. حذف داده نزد ارائه دهنده مستقل ممکن است نیازمند درخواست جداگانه به همان ارائه دهنده باشد.</p></section>
+<section class="card" id="updates-fa"><h2>۱۲. تغییرات و تماس</h2><p>تاریخ بالای این صفحه آخرین بازبینی را نشان می دهد. اگر شیوه پردازش به طور مهم تغییر کند، توضیح و در صورت نیاز انتخاب یا رضایت لازم از مسیر مناسب ارائه می شود. برای پرسش، شکایت یا درخواست مرتبط با حریم خصوصی با <a href="mailto:Naturrre.app@gmail.com">Naturrre.app@gmail.com</a> تماس بگیرید.</p></section>
+</article>
+<article id="policy-en" lang="en" dir="ltr">
+<header class="hero"><p class="eyebrow">Our apps and games</p><h1>Privacy Policy</h1><p class="publisher">[DEVELOPER NAME AS SHOWN IN THE STORE]</p><p class="meta"><time datetime="2026-11-11">Last revised: November 11, 2026</time></p></header>
+<aside class="review"><strong>Publisher preparation note:</strong> Before publishing, replace the developer name; verify services, retention practices and children’s commitments against the actual apps, then remove this note.</aside>
+<div class="summary"><p>This page explains feature-dependent data practices, permissions, service providers and how to request deletion.</p><nav class="quicklinks" aria-label="Quick links"><a href="#data-en">Data</a><a href="#providers-en">Providers</a><a href="#children-en">Children</a><a href="#delete-data-en">Account and data deletion</a></nav></div>
+<section class="card" id="scope-en"><h2>1. Scope and responsible developer</h2><p>This policy applies to apps and games published by <strong class="publisher">[DEVELOPER NAME AS SHOWN IN THE STORE]</strong> that link to this page. The data processed and services enabled depend on the app, version, distribution store, features you use and device permissions. A feature described here is not necessarily available in every app.</p><p>Read this policy together with the specific app description and in-app notices. A feature-specific notice provides additional details about that processing. For privacy questions, contact <a href="mailto:Naturrre.app@gmail.com">Naturrre.app@gmail.com</a>.</p></section>
+<section class="card" id="data-en"><h2>2. Data that may be processed</h2><div class="table-wrap"><table><thead><tr><th scope="col">Category</th><th scope="col">Examples and purpose</th></tr></thead><tbody><tr><td>Account and profile</td><td>If you register or sign in: phone number, email address, account ID, display name, profile image and information you provide, such as country or city; for authentication, account management and relevant social features.</td></tr><tr><td>App activity and content</td><td>Preferences, learning progress, game scores, activity history and backups; stored on the device or, where supported, on a server for synchronization and recovery.</td></tr><tr><td>Technical and usage data</td><td>IP address, device model, operating system, language, app version and installation source, installation or device identifiers where used, usage events and crash reports; for security, performance analysis and troubleshooting.</td></tr><tr><td>Notifications and advertising</td><td>Push registration tokens or identifiers, notification interactions, ad impressions and interactions, advertising identifiers where permitted and approximate location inferred from IP; according to the relevant feature and settings.</td></tr><tr><td>Purchases and subscriptions</td><td>Product, purchase status and date, receipts or transaction tokens and information needed to verify or restore a purchase. Payment card details are processed by the app store or payment provider.</td></tr><tr><td>Files, media and inputs</td><td>Content you select, record or submit; for profile photos, pronunciation, translation, AI assistance, saving or file transfer. Access and transmission depend on the feature you use.</td></tr><tr><td>Conversations and support</td><td>Messages, responses, attachments and contact details; for responses, history, support and, where needed, safety and abuse review. This information may be stored on a server.</td></tr><tr><td>Device connections</td><td>For nearby transfers or games: a device name or connection identifier, session and Wi-Fi or Bluetooth connection information, and selected files; to discover and communicate with the destination device.</td></tr></tbody></table></div><p>Fully local features process their data on the device. Online features, advertising or analytics services can transmit related data to our servers or the provider of that service.</p></section>
+<section class="card" id="purposes-en"><h2>3. Why data is used</h2><ul><li>Deliver learning and entertainment content, perform a selected feature, and maintain preferences or progress.</li><li>Provide sign-in, account management, backups, synchronization and purchase or subscription recovery.</li><li>Provide communication, leaderboards, file transfer or AI assistance in apps offering those features.</li><li>Send notifications, display ads in ad-supported versions, analyze performance, fix errors and respond to support requests.</li><li>Maintain security, prevent abuse and fraud, and meet applicable legal obligations.</li></ul><p>Depending on applicable law and the processing involved, legal grounds may include providing a requested service, your consent, legal obligations or legitimate interests in security and service improvement. Where consent is required, it must be obtained separately; this notice does not itself replace that consent.</p></section>
+<section class="card" id="permissions-en"><h2>4. Device permissions and your choices</h2><ul><li>Notifications: to display messages and reminders; you can disable them in system settings.</li><li>Microphone and camera: for recordings you initiate, pronunciation practice, photos or QR scanning in the relevant feature.</li><li>Files and media: to select, display, save or transfer files needed for that feature.</li><li>Bluetooth, nearby devices and network access: for connections, data exchange or nearby games. Some older operating systems may require location permission for device discovery.</li></ul><p>You can review or revoke permissions in device settings. Denying permission may limit the related feature. Granting a permission alone does not mean all device content is uploaded; transmission depends on the feature and service used.</p></section>
+<section class="card" id="ads-en"><h2>5. Advertising, analytics and notifications</h2><p>Some versions use services such as Google AdMob or Yandex Mobile Ads for advertising, and Firebase Analytics, Crashlytics or Cloud Messaging for usage analysis, crash reporting and notifications. An enabled service may process technical information, permitted identifiers and events related to that service. Non-personalized ads may also require technical data for security, delivery and measurement.</p><p>Where the app provides a consent choice or privacy controls, you can manage those options there. System settings also provide notification and advertising-identifier controls. Processing involving children is subject to the children section below.</p></section>
+<section class="card" id="ai-en"><h2>6. AI, translation and online processing</h2><p>When you use chat, translation or text, image or audio processing, necessary inputs and technical request information may be sent to our servers and the relevant processing service to produce a response. Relevant features may use OpenRouter and its model providers, Google services or Microsoft Azure. A provider is relevant only where enabled for that feature.</p><p>Messages and responses may be retained for history, support, safety and abuse review, and reviewed by authorized personnel where necessary. External-provider retention and use also depend on the service and its settings; there is no blanket promise that every input is immediately deleted or that every provider excludes model training. Avoid submitting confidential or unnecessary personal information.</p></section>
+<section class="card" id="sharing-en"><h2>7. Recipients and other services</h2><p>Necessary data may be shared with hosting, authentication, processing, analytics, advertising, notification and payment providers to perform those services. Public or social features may show other users the display name, image or scores you choose to display. A file selected for transfer is sent to the selected recipient.</p><p>Limited disclosure may also be necessary for legal obligations, fraud investigations or protecting safety and rights. Opening an external link, advertisement or store also involves that destination’s data practices. The links below provide information about potential service providers.</p></section>
+<section class="card" id="providers-en"><h2>Provider privacy information</h2><p>These services are not all enabled in every app. The list describes services that may be used across the app portfolio. Purchases through Myket or another store are also subject to that store’s own privacy notice.</p><div class="table-wrap"><table><thead><tr><th scope="col">Provider</th><th scope="col">Relevant service</th></tr></thead><tbody><tr><td><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google / Google Play / AdMob</a></td><td>Sign-in, store and billing services or advertising, where used</td></tr><tr><td><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase</a></td><td>Usage analytics, crash reporting, notifications or account services, where used</td></tr><tr><td><a href="https://yandex.com/legal/confidential/en/" rel="noopener noreferrer">Yandex Mobile Ads</a></td><td>Advertising in versions using this service</td></tr><tr><td><a href="https://openrouter.ai/privacy/" rel="noopener noreferrer">OpenRouter</a></td><td>AI requests and relevant model providers, where used</td></tr><tr><td><a href="https://www.microsoft.com/en-us/privacy/privacystatement" rel="noopener noreferrer">Microsoft / Azure</a></td><td>Translation or cloud processing in relevant features, where used</td></tr><tr><td><a href="https://cafebazaar.ir/privacy" rel="noopener noreferrer">Cafe Bazaar</a></td><td>Distribution and Bazaar billing or subscriptions, where used</td></tr></tbody></table></div></section>
+<section class="card" id="retention-en"><h2>8. Retention and security</h2><ul><li>Local data generally remains until removed in the app, cleared through device settings or removed with the app; operating-system backups may be managed separately.</li><li>Server account data and backups are retained while needed for the relevant feature or until a valid deletion request is processed. Records needed for security, accounting or legal obligations may be retained longer as necessary.</li><li>Support messages, processing records and technical logs are retained according to support and safety needs and the relevant service settings. They are deleted or anonymized once no longer needed.</li><li>Deletion from server backups may follow their retention cycle. Any data excluded from deletion and the reason for retention will be explained in the response to a request.</li></ul><p>Appropriate access controls and safeguards are used, but no transmission or storage method is completely secure. We and our providers may process data in countries other than your country of residence; applicable data-protection and transfer requirements must be followed.</p></section>
+<section class="card" id="children-en"><h2>9. Children’s privacy and parents</h2><p>Some apps offer children’s content; others serve a general audience. Each app’s store listing identifies its audience. In child-directed experiences, collection must be limited to permitted service needs, and interest-based advertising or remarketing based on a child’s profile is not provided.</p><p>Features involving accounts, submitted content, chat or online processing for a child require notice and verifiable parental or guardian consent before collection where required by law. Installing an app or granting a device permission does not replace that consent. A parent or guardian can contact us to review information associated with a child, request deletion or stop processing. If we learn that a child’s data is processed without required consent, we investigate and act to delete the data or restrict processing.</p></section>
+<section class="card" id="rights-en"><h2>10. Your choices and rights</h2><p>Depending on your location and applicable law, you may have rights to access, correct, obtain a copy of or delete data, object to or restrict processing, withdraw consent or contact a supervisory authority. Email your request with the app name. To protect the account, proportionate identity or guardianship verification may be needed; do not send passwords or sign-in codes.</p><p>Withdrawing permission or consent can limit the related feature. You can disable notifications in device settings. Uninstalling an app does not necessarily delete a server account or server data. Paid subscriptions must also be managed or canceled through the relevant store.</p></section>
+<section class="card" id="delete-data-en"><h2>11. Request account and data deletion</h2><p>To request deletion, email <a href="mailto:Naturrre.app@gmail.com?subject=Account%20and%20Data%20Deletion">Naturrre.app@gmail.com</a> with the subject <strong>Account and Data Deletion</strong> and include:</p><ul><li>The app name and, if possible, its package identifier.</li><li>The phone number, email or identifier used for that app account, if there is an account.</li><li>Whether you request deletion of the entire account and associated data or a specific category, such as conversations or backups.</li></ul><p>Any deletion control available inside the app can also be used to initiate a request. After verification, the account and associated data under our control are deleted or irreversibly anonymized, except records that must be retained for limited legal, security or fraud-prevention purposes. Requests are answered and handled within applicable legal deadlines, with retention exceptions explained. Deletion of data held by an independent provider may require a separate request to that provider.</p></section>
+<section class="card" id="updates-en"><h2>12. Updates and contact</h2><p>The date at the top of this page shows the latest revision. Material changes to processing will be explained through an appropriate channel, with any choice or consent required. For privacy questions, complaints or requests, contact <a href="mailto:Naturrre.app@gmail.com">Naturrre.app@gmail.com</a>.</p></section>
+</article>
+</main>
+<footer><a href="mailto:Naturrre.app@gmail.com">Naturrre.app@gmail.com</a> · <time datetime="2026-11-11">2026</time></footer>
+<script>
+(() => {
+  const buttons = document.querySelectorAll('[data-language]');
+  function setLanguage(language) {
+    const active = language === 'en' ? 'en' : 'fa';
+    document.documentElement.lang = active;
+    document.documentElement.dir = active === 'fa' ? 'rtl' : 'ltr';
+    document.querySelectorAll('article[lang]').forEach(article => { article.hidden = article.lang !== active; });
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === active)));
+    document.getElementById('brand').textContent = active === 'fa' ? 'حریم خصوصی برنامه ها' : 'App Privacy';
+  }
+  buttons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+  const hashLanguage = location.hash.endsWith('-en') ? 'en' : (location.hash.endsWith('-fa') ? 'fa' : null);
+  const requested = new URLSearchParams(location.search).get('lang');
+  setLanguage(hashLanguage || requested || 'fa');
+  if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView());
+})();
+</script>
 </body>
 </html>
